@@ -5,9 +5,10 @@
   "scripts": {
     "lerna": "lerna",
     "bootstrap": "npm install && lerna bootstrap --hoist --nohoist=\"{bootstrap-sass,babel-loader,css-loader,eslint-loader,file-loader,json-loader,sass-loader,style-loader,raw-loader,worker-loader}\"",
-    "build": "npm run flow && lerna run build"
+    "build": "lerna run build"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "lerna": "^2.0.0-rc.5"
   }
 }

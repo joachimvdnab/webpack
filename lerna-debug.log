@@ -1,0 +1,459 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   sort: true,
+1 silly flags   stream: false,
+1 silly flags   'only-updated': false,
+1 silly flags   onlyUpdated: false,
+1 silly flags   parallel: false,
+1 silly flags   concurrency: 4,
+1 silly flags   script: 'build',
+1 silly flags   args: [] }
+2 verbose rootPath /Users/joachimvandenabeele/Documents/Projects/webpack
+3 info version 2.0.0-rc.5
+4 silly existsSync /Users/joachimvandenabeele/Documents/Projects/webpack/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir build [] package
+9 silly getExecOpts { cwd: '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package' }
+10 silly runScriptInDir build [] package1
+11 silly getExecOpts { cwd: '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1' }
+12 error build Errored while running script in '@joachim/package1'
+13 error execute Error: Command failed: npm run build
+13 error execute
+13 error execute npm ERR! Darwin 16.6.0
+13 error execute npm ERR! argv "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/node" "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/npm" "run" "build"
+13 error execute npm ERR! node v6.4.0
+13 error execute npm ERR! npm  v3.10.3
+13 error execute npm ERR! code ELIFECYCLE
+13 error execute npm ERR! @joachim/package1@0.0.0 build: `webpack -p --config webpack-config.js --display-error-details`
+13 error execute npm ERR! Exit status 2
+13 error execute npm ERR!
+13 error execute npm ERR! Failed at the @joachim/package1@0.0.0 build script 'webpack -p --config webpack-config.js --display-error-details'.
+13 error execute npm ERR! Make sure you have the latest version of node.js and npm installed.
+13 error execute npm ERR! If you do, this is most likely a problem with the @joachim/package1 package,
+13 error execute npm ERR! not with npm itself.
+13 error execute npm ERR! Tell the author that this fails on your system:
+13 error execute npm ERR!     webpack -p --config webpack-config.js --display-error-details
+13 error execute npm ERR! You can get information on how to open an issue for this project with:
+13 error execute npm ERR!     npm bugs @joachim/package1
+13 error execute npm ERR! Or if that isn't available, you can get their info via:
+13 error execute npm ERR!     npm owner ls @joachim/package1
+13 error execute npm ERR! There is likely additional logging output above.
+13 error execute
+13 error execute npm ERR! Please include the following file with any support request:
+13 error execute npm ERR!     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/npm-debug.log
+13 error execute
+13 error execute > @joachim/package1@0.0.0 build /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1
+13 error execute > webpack -p --config webpack-config.js --display-error-details
+13 error execute
+13 error execute Hash: 7fa3fceefcf44ea48485
+13 error execute Version: webpack 3.0.0
+13 error execute Time: 603ms
+13 error execute     Asset       Size  Chunks             Chunk Names
+13 error execute bundle.js  766 bytes       0  [emitted]  main
+13 error execute    [0] ./src/index.js 376 bytes {0} [built]
+13 error execute
+13 error execute ERROR in ./src/index.js
+13 error execute Module not found: Error: Can't resolve '@joachim/package' in '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src'
+13 error execute resolve '@joachim/package' in '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src'
+13 error execute   Parsed request is a module
+13 error execute   using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)
+13 error execute     Field 'browser' doesn't contain a valid alias configuration
+13 error execute   after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)
+13 error execute     resolve as module
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/node_modules doesn't exist or is not a directory
+13 error execute       /Users/node_modules doesn't exist or is not a directory
+13 error execute       /node_modules doesn't exist or is not a directory
+13 error execute       looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules
+13 error execute         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute         after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)
+13 error execute           using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules/@joachim/package)
+13 error execute             no extension
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn't exist
+13 error execute             .js
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js doesn't exist
+13 error execute             .json
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json doesn't exist
+13 error execute             as directory
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn't exist
+13 error execute       looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules
+13 error execute         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute         after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)
+13 error execute           using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: .)
+13 error execute             .js
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js doesn't exist
+13 error execute             .json
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json doesn't exist
+13 error execute             no extension
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package is not a file
+13 error execute               resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package
+13 error execute                 using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: .)
+13 error execute                   no extension
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package is not a file
+13 error execute                   .js
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js doesn't exist
+13 error execute                   .json
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json doesn't exist
+13 error execute                   as directory
+13 error execute                     existing directory
+13 error execute                       using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute             as directory
+13 error execute               existing directory
+13 error execute                 using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index
+13 error execute                   using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: ./index)
+13 error execute                     no extension
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                     .js
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.js)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                     .json
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.json)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute       looking for modules in /Users/joachimvandenabeele/node_modules
+13 error execute         No description file found
+13 error execute         Field 'browser' doesn't contain a valid alias configuration
+13 error execute         No description file found
+13 error execute         no extension
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package doesn't exist
+13 error execute         .js
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package.js doesn't exist
+13 error execute         .json
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package.json doesn't exist
+13 error execute         as directory
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package doesn't exist
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/node_modules]
+13 error execute [/Users/node_modules]
+13 error execute [/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package]
+13 error execute  @ ./src/index.js 7:15-42
+13 error execute
+13 error execute     at Promise.all.then.arr (/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/execa/index.js:210:11)
+13 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
+13 error execute  callback with error
+13 error execute  { Error: Command failed: npm run build
+13 error execute
+13 error execute npm ERR! Darwin 16.6.0
+13 error execute npm ERR! argv "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/node" "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/npm" "run" "build"
+13 error execute npm ERR! node v6.4.0
+13 error execute npm ERR! npm  v3.10.3
+13 error execute npm ERR! code ELIFECYCLE
+13 error execute npm ERR! @joachim/package1@0.0.0 build: `webpack -p --config webpack-config.js --display-error-details`
+13 error execute npm ERR! Exit status 2
+13 error execute npm ERR!
+13 error execute npm ERR! Failed at the @joachim/package1@0.0.0 build script 'webpack -p --config webpack-config.js --display-error-details'.
+13 error execute npm ERR! Make sure you have the latest version of node.js and npm installed.
+13 error execute npm ERR! If you do, this is most likely a problem with the @joachim/package1 package,
+13 error execute npm ERR! not with npm itself.
+13 error execute npm ERR! Tell the author that this fails on your system:
+13 error execute npm ERR!     webpack -p --config webpack-config.js --display-error-details
+13 error execute npm ERR! You can get information on how to open an issue for this project with:
+13 error execute npm ERR!     npm bugs @joachim/package1
+13 error execute npm ERR! Or if that isn't available, you can get their info via:
+13 error execute npm ERR!     npm owner ls @joachim/package1
+13 error execute npm ERR! There is likely additional logging output above.
+13 error execute
+13 error execute npm ERR! Please include the following file with any support request:
+13 error execute npm ERR!     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/npm-debug.log
+13 error execute
+13 error execute > @joachim/package1@0.0.0 build /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1
+13 error execute > webpack -p --config webpack-config.js --display-error-details
+13 error execute
+13 error execute Hash: 7fa3fceefcf44ea48485
+13 error execute Version: webpack 3.0.0
+13 error execute Time: 603ms
+13 error execute     Asset       Size  Chunks             Chunk Names
+13 error execute bundle.js  766 bytes       0  [emitted]  main
+13 error execute    [0] ./src/index.js 376 bytes {0} [built]
+13 error execute
+13 error execute ERROR in ./src/index.js
+13 error execute Module not found: Error: Can't resolve '@joachim/package' in '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src'
+13 error execute resolve '@joachim/package' in '/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src'
+13 error execute   Parsed request is a module
+13 error execute   using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)
+13 error execute     Field 'browser' doesn't contain a valid alias configuration
+13 error execute   after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)
+13 error execute     resolve as module
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/Projects/node_modules doesn't exist or is not a directory
+13 error execute       /Users/joachimvandenabeele/Documents/node_modules doesn't exist or is not a directory
+13 error execute       /Users/node_modules doesn't exist or is not a directory
+13 error execute       /node_modules doesn't exist or is not a directory
+13 error execute       looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules
+13 error execute         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute         after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)
+13 error execute           using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules/@joachim/package)
+13 error execute             no extension
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn't exist
+13 error execute             .js
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js doesn't exist
+13 error execute             .json
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json doesn't exist
+13 error execute             as directory
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn't exist
+13 error execute       looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules
+13 error execute         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute         after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)
+13 error execute           using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: .)
+13 error execute             .js
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js doesn't exist
+13 error execute             .json
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json doesn't exist
+13 error execute             no extension
+13 error execute               Field 'browser' doesn't contain a valid alias configuration
+13 error execute               /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package is not a file
+13 error execute               resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package
+13 error execute                 using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: .)
+13 error execute                   no extension
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package is not a file
+13 error execute                   .js
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js doesn't exist
+13 error execute                   .json
+13 error execute                     Field 'browser' doesn't contain a valid alias configuration
+13 error execute                     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json doesn't exist
+13 error execute                   as directory
+13 error execute                     existing directory
+13 error execute                       using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute             as directory
+13 error execute               existing directory
+13 error execute                 using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index
+13 error execute                   using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: ./index)
+13 error execute                     no extension
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn't exist
+13 error execute                     .js
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.js)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn't exist
+13 error execute                     .json
+13 error execute                       Field 'browser' doesn't contain a valid alias configuration
+13 error execute                       /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json doesn't exist
+13 error execute                       resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json
+13 error execute                         using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.json)
+13 error execute                           no extension
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute                           .js
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js doesn't exist
+13 error execute                           .json
+13 error execute                             Field 'browser' doesn't contain a valid alias configuration
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json doesn't exist
+13 error execute                           as directory
+13 error execute                             /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn't exist
+13 error execute       looking for modules in /Users/joachimvandenabeele/node_modules
+13 error execute         No description file found
+13 error execute         Field 'browser' doesn't contain a valid alias configuration
+13 error execute         No description file found
+13 error execute         no extension
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package doesn't exist
+13 error execute         .js
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package.js doesn't exist
+13 error execute         .json
+13 error execute           Field 'browser' doesn't contain a valid alias configuration
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package.json doesn't exist
+13 error execute         as directory
+13 error execute           /Users/joachimvandenabeele/node_modules/@joachim/package doesn't exist
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/node_modules]
+13 error execute [/Users/node_modules]
+13 error execute [/node_modules]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json]
+13 error execute [/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package.js]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package.json]
+13 error execute [/Users/joachimvandenabeele/node_modules/@joachim/package]
+13 error execute  @ ./src/index.js 7:15-42
+13 error execute
+13 error execute     at Promise.all.then.arr (/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/execa/index.js:210:11)
+13 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
+13 error execute   stack: 'Error: Command failed: npm run build\n\nnpm ERR! Darwin 16.6.0\nnpm ERR! argv "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/node" "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/npm" "run" "build"\nnpm ERR! node v6.4.0\nnpm ERR! npm  v3.10.3\nnpm ERR! code ELIFECYCLE\nnpm ERR! @joachim/package1@0.0.0 build: `webpack -p --config webpack-config.js --display-error-details`\nnpm ERR! Exit status 2\nnpm ERR! \nnpm ERR! Failed at the @joachim/package1@0.0.0 build script \'webpack -p --config webpack-config.js --display-error-details\'.\nnpm ERR! Make sure you have the latest version of node.js and npm installed.\nnpm ERR! If you do, this is most likely a problem with the @joachim/package1 package,\nnpm ERR! not with npm itself.\nnpm ERR! Tell the author that this fails on your system:\nnpm ERR!     webpack -p --config webpack-config.js --display-error-details\nnpm ERR! You can get information on how to open an issue for this project with:\nnpm ERR!     npm bugs @joachim/package1\nnpm ERR! Or if that isn\'t available, you can get their info via:\nnpm ERR!     npm owner ls @joachim/package1\nnpm ERR! There is likely additional logging output above.\n\nnpm ERR! Please include the following file with any support request:\nnpm ERR!     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/npm-debug.log\n\n> @joachim/package1@0.0.0 build /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1\n> webpack -p --config webpack-config.js --display-error-details\n\nHash: 7fa3fceefcf44ea48485\nVersion: webpack 3.0.0\nTime: 603ms\n    Asset       Size  Chunks             Chunk Names\nbundle.js  766 bytes       0  [emitted]  main\n   [0] ./src/index.js 376 bytes {0} [built]\n\nERROR in ./src/index.js\nModule not found: Error: Can\'t resolve \'@joachim/package\' in \'/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src\'\nresolve \'@joachim/package\' in \'/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src\'\n  Parsed request is a module\n  using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)\n    Field \'browser\' doesn\'t contain a valid alias configuration\n  after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)\n    resolve as module\n      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/Projects/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/node_modules doesn\'t exist or is not a directory\n      /Users/node_modules doesn\'t exist or is not a directory\n      /node_modules doesn\'t exist or is not a directory\n      looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules\n        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)\n          Field \'browser\' doesn\'t contain a valid alias configuration\n        after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)\n          using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules/@joachim/package)\n            no extension\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn\'t exist\n            .js\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js doesn\'t exist\n            .json\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json doesn\'t exist\n            as directory\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn\'t exist\n      looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules\n        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)\n          Field \'browser\' doesn\'t contain a valid alias configuration\n        after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)\n          using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: .)\n            .js\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js doesn\'t exist\n            .json\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json doesn\'t exist\n            no extension\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package is not a file\n              resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package\n                using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: .)\n                  no extension\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package is not a file\n                  .js\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js doesn\'t exist\n                  .json\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json doesn\'t exist\n                  as directory\n                    existing directory\n                      using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n            as directory\n              existing directory\n                using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index\n                  using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: ./index)\n                    no extension\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                    .js\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.js)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                    .json\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.json)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n      looking for modules in /Users/joachimvandenabeele/node_modules\n        No description file found\n        Field \'browser\' doesn\'t contain a valid alias configuration\n        No description file found\n        no extension\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package doesn\'t exist\n        .js\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package.js doesn\'t exist\n        .json\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package.json doesn\'t exist\n        as directory\n          /Users/joachimvandenabeele/node_modules/@joachim/package doesn\'t exist\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/node_modules]\n[/Users/joachimvandenabeele/Documents/node_modules]\n[/Users/node_modules]\n[/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/node_modules/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package/package.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package]\n @ ./src/index.js 7:15-42\n\n    at Promise.all.then.arr (/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/execa/index.js:210:11)\n    at process._tickCallback (internal/process/next_tick.js:103:7)',
+13 error execute   code: 1,
+13 error execute   killed: false,
+13 error execute   stdout: '\n> @joachim/package1@0.0.0 build /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1\n> webpack -p --config webpack-config.js --display-error-details\n\nHash: 7fa3fceefcf44ea48485\nVersion: webpack 3.0.0\nTime: 603ms\n    Asset       Size  Chunks             Chunk Names\nbundle.js  766 bytes       0  [emitted]  main\n   [0] ./src/index.js 376 bytes {0} [built]\n\nERROR in ./src/index.js\nModule not found: Error: Can\'t resolve \'@joachim/package\' in \'/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src\'\nresolve \'@joachim/package\' in \'/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src\'\n  Parsed request is a module\n  using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)\n    Field \'browser\' doesn\'t contain a valid alias configuration\n  after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./src)\n    resolve as module\n      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/Projects/node_modules doesn\'t exist or is not a directory\n      /Users/joachimvandenabeele/Documents/node_modules doesn\'t exist or is not a directory\n      /Users/node_modules doesn\'t exist or is not a directory\n      /node_modules doesn\'t exist or is not a directory\n      looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules\n        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)\n          Field \'browser\' doesn\'t contain a valid alias configuration\n        after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules)\n          using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/package.json (relative path: ./node_modules/@joachim/package)\n            no extension\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn\'t exist\n            .js\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js doesn\'t exist\n            .json\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json doesn\'t exist\n            as directory\n              /Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package doesn\'t exist\n      looking for modules in /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules\n        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)\n          Field \'browser\' doesn\'t contain a valid alias configuration\n        after using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/package.json (relative path: ./node_modules)\n          using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: .)\n            .js\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js doesn\'t exist\n            .json\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json doesn\'t exist\n            no extension\n              Field \'browser\' doesn\'t contain a valid alias configuration\n              /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package is not a file\n              resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package\n                using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: .)\n                  no extension\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package is not a file\n                  .js\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js doesn\'t exist\n                  .json\n                    Field \'browser\' doesn\'t contain a valid alias configuration\n                    /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json doesn\'t exist\n                  as directory\n                    existing directory\n                      using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n            as directory\n              existing directory\n                using path: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index\n                  using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/package.json (relative path: ./index)\n                    no extension\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index doesn\'t exist\n                    .js\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.js)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js doesn\'t exist\n                    .json\n                      Field \'browser\' doesn\'t contain a valid alias configuration\n                      /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json doesn\'t exist\n                      resolved symlink to /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json\n                        using description file: /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/package.json (relative path: ./index.json)\n                          no extension\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n                          .js\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js doesn\'t exist\n                          .json\n                            Field \'browser\' doesn\'t contain a valid alias configuration\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json doesn\'t exist\n                          as directory\n                            /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json doesn\'t exist\n      looking for modules in /Users/joachimvandenabeele/node_modules\n        No description file found\n        Field \'browser\' doesn\'t contain a valid alias configuration\n        No description file found\n        no extension\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package doesn\'t exist\n        .js\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package.js doesn\'t exist\n        .json\n          Field \'browser\' doesn\'t contain a valid alias configuration\n          /Users/joachimvandenabeele/node_modules/@joachim/package.json doesn\'t exist\n        as directory\n          /Users/joachimvandenabeele/node_modules/@joachim/package doesn\'t exist\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/src/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/node_modules]\n[/Users/joachimvandenabeele/Documents/node_modules]\n[/Users/node_modules]\n[/node_modules]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/node_modules/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/node_modules/@joachim/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.js]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json.json]\n[/Users/joachimvandenabeele/Documents/Projects/webpack/packages/package/index.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package/package.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package]\n[/Users/joachimvandenabeele/node_modules/@joachim/package.js]\n[/Users/joachimvandenabeele/node_modules/@joachim/package.json]\n[/Users/joachimvandenabeele/node_modules/@joachim/package]\n @ ./src/index.js 7:15-42\n',
+13 error execute   stderr: '\nnpm ERR! Darwin 16.6.0\nnpm ERR! argv "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/node" "/Users/joachimvandenabeele/.nvm/versions/node/v6.4.0/bin/npm" "run" "build"\nnpm ERR! node v6.4.0\nnpm ERR! npm  v3.10.3\nnpm ERR! code ELIFECYCLE\nnpm ERR! @joachim/package1@0.0.0 build: `webpack -p --config webpack-config.js --display-error-details`\nnpm ERR! Exit status 2\nnpm ERR! \nnpm ERR! Failed at the @joachim/package1@0.0.0 build script \'webpack -p --config webpack-config.js --display-error-details\'.\nnpm ERR! Make sure you have the latest version of node.js and npm installed.\nnpm ERR! If you do, this is most likely a problem with the @joachim/package1 package,\nnpm ERR! not with npm itself.\nnpm ERR! Tell the author that this fails on your system:\nnpm ERR!     webpack -p --config webpack-config.js --display-error-details\nnpm ERR! You can get information on how to open an issue for this project with:\nnpm ERR!     npm bugs @joachim/package1\nnpm ERR! Or if that isn\'t available, you can get their info via:\nnpm ERR!     npm owner ls @joachim/package1\nnpm ERR! There is likely additional logging output above.\n\nnpm ERR! Please include the following file with any support request:\nnpm ERR!     /Users/joachimvandenabeele/Documents/Projects/webpack/packages/package1/npm-debug.log\n',
+13 error execute   failed: true,
+13 error execute   signal: null,
+13 error execute   cmd: 'npm run build',
+13 error execute   timedOut: false }
