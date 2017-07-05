@@ -1,0 +1,11 @@
+{
+  "name": "@joachim/package1",
+  "version": "0.0.0",
+  "description": "package1",
+  "scripts": {
+
+  },
+  "dependencies": {
+    "@joachim/package": "^0.0.0"
+  }
+}

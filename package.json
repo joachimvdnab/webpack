@@ -1,0 +1,13 @@
+{
+  "name": "webpack",
+  "version": "0.0.0",
+  "description": "Problem webpack",
+  "scripts": {
+    "lerna": "lerna",
+    "bootstrap": "npm install && lerna bootstrap --hoist --nohoist=\"{bootstrap-sass,babel-loader,css-loader,eslint-loader,file-loader,json-loader,sass-loader,style-loader,raw-loader,worker-loader}\"",
+    "build": "npm run flow && lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^2.0.0-rc.5"
+  }
+}
